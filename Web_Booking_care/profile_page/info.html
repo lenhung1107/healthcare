@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Thông tin đặt lịch khám </title>
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<section class="account-form">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h1>Thông tin đặt lịch khám</h1>
+      <img src="ava.png" alt="" class="image">
+      <h2>Thông tin bệnh Nhân </h2>
+   <div class="infor">
+      <div class="ima">
+         <img src="./css/doctor3.jpg" alt="" class="image2">
+      </div>
+      <div class="namegder">
+      <p class="placeholder">Họ và tên</p>
+      <input type="text" name="name" maxlength="50" placeholder="Nhập họ và tên" class="box">
+      <p class="placeholder">Giới tính</p>
+   </br>
+      <label class="container">Nam
+      <input name="sex" type="radio" value="Nam"/>
+      <label class="container">Nữ
+      <input name="sex" type="radio" value="Nữ"/>
+      <p class="placeholder">Số điện thoại</p>
+      <input type="tel" name="phone" maxlength="50" placeholder="Nhập số điện thoại" class="box">
+   </div>
+      <div class="last_inform">
+      <p class="placeholder">Ngày sinh</p>
+      <input type="date" name="birthday" placeholder="dd/mm/yyyy" class="box">
+      <p class="placeholder">Địa chỉ</p>
+      <input type="address" name="address" maxlength="50" placeholder="Nhập địa chỉ" class="box">
+      <p class="placeholder">Email</p>
+      <input type="email" name="email" maxlength="50" placeholder="Nhập email" class="box">
+   </div>
+      
+   </div>
+      <h2>Thông tin đặt khám</h2>
+      <div class="infor">
+         <div class="ima">
+            <img src="./css/doctor3.jpg" alt="" class="image2">
+         </div>
+         <div class="day">
+            <p class="placeholder"> <b>Họ và tên bác sĩ</b> </p>
+         <input type="text" name="name" maxlength="50" placeholder="Nhập họ và tên" class="box">
+         <p class="placeholder"><b>Số điện thoại bác sĩ</b></p>
+         <input type="tel" name="phone" maxlength="50" placeholder="Nhập số điện thoại" class="box">
+         </div>
+         <div class="par3">
+            <p class="placeholder">Ngày đặt khám</p>
+            <input type="date" name="date" placeholder="dd/mm/yyyy" class="box">
+            <p>Giờ đặt khám</p>
+            <input type="time" name="time" placeholder="hh/mm/gmt" class="box">
+         </div>
+      </div>
+   </br>
+   <section class="choose">
+      <form action="https://httpbin.org/anything" method="post" >
+         <label for="lang-select" style="font-size: 18px;"><b>Phương thức thanh toán:</b> </label>
+         <select name="lang" id="lang-select">
+         
+             <option value="">--Hãy chọn một phương thức thanh toán--</option>
+             <option value="Tiền mặt">Thanh toán bằng tiền mặt khi đến khám </option>
+             <option value="Chuyển khoản">Thanh toán bằng chuyển khoản trả trước</option>
+         </select>
+        
+     </form>
+   </section>
+      <input type="submit" value="Xác nhận " name="submit" class="btn">
+   </form>
+
+</section>
+
+<!-- custom js file link  -->
+
+
+</body>
+</html>
